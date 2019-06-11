@@ -211,8 +211,16 @@ print("this has \(sb.count) 12")
 
 var welcome = "hello"
 welcome.insert("!", at: welcome.endIndex)
-welcome.insert("S", at: welcome.startIndex)
+
+
+//welcome.insert(contentsOf:" there", at: welcome.index(before: welcome.endIndex))
+
+
+welcome.remove(at: welcome.index(before: welcome.endIndex))
 print(welcome)
+
+
+
 
 
 
