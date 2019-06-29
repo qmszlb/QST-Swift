@@ -31,7 +31,6 @@ class ViewController: UIViewController {
 
     }
     
-    // 第一个数 操作符 第二个数 答案 
     var firstNumber = ""
     var secondNumber = ""
     var currentOperator = Operators.Empty
@@ -44,7 +43,7 @@ class ViewController: UIViewController {
 
         displayedNumber += String (sender.tag)
     
-    resultLabel.text = displayedNumber
+        resultLabel.text = displayedNumber
     
     }
     
@@ -71,6 +70,19 @@ class ViewController: UIViewController {
         selectedOperator(operation: currentOperator)
     }
     
+    
+    
+    @IBAction func selectedClear(sender : UIButton){
+    
+         firstNumber = ""
+         secondNumber = ""
+         currentOperator = Operators.Empty
+         displayedNumber = ""
+         result = ""
+         resultLabel.text = "0"
+    
+    }
+
     
     
     func selectedOperator(operation: Operators) {
